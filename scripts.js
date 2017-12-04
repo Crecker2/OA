@@ -63,8 +63,9 @@ var allParts = [solo, t1, t2, baritone, bass];
 var files;
 $.ajax({
 	url: 'files.json',
+	dataType: 'json'
 }).done(function(data){
-	files = jQuery.parseJSON(data);
+	files = data;
 	for(var i=0; i<allParts.length; i++){
 		var file = allParts[i].vocal;
 		allParts[i].file = files[file];
