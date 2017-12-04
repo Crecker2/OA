@@ -1,0 +1,7 @@
+The naming convention for the files is as such: songName_part.mp3.
+
+THIS SHOULD NOT CHANGE. Breaking the naming convention won't ruin anything,
+but the convention inside of this repo follows a similar schematic.
+
+It's always either camelCase one word (e.g: "t1Request")
+or underscored. This makes it much easier to find and replace relevant names when creating new pages.

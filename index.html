@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OA Song Player</title>
+	<!--Material Design Links-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="mdl/material.min.css">
+	<script src="mdl/material.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto" rel="stylesheet">
+
+	<!--OA Player Links-->
+	<link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="jquery-3.1.0.js"></script>
+	<script type="text/javascript" src= "scripts.js"></script>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+	<div class="demo-card-wide mdl-card mdl-shadow--2dp myStyle">
+	  <div class="mdl-card__title" id="card">
+	    <h2 class="mdl-card__title-text">OA Song Player</h2>
+	  </div>
+	  <div class="mdl-card__supporting-text quotetext" id="#quoteText">
+		  <div style="margin: 0 auto">
+			<p style="display: inline-block; margin-right: 10px" class="timeKeeper">0:00</p>
+			<input type="range" value='0' style="width: 70%; display: inline-block" name="scrubber" id="scrubber" min="0" max="60" class="scrubber">
+			<p style="display: inline-block; margin-left: 10px" class="timeSong">0:00</p>
+		  </div>
+	  </div>
+	  <div class="mdl-card__actions mdl-card--border">
+	    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect playpausebtn disabled" onclick="">
+	      Play
+	    </a>
+	  </div>
+	  <div class="mdl-card__actions mdl-card--border" style="margin-left: -30px">
+		<ul>
+      			<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" onclick="resetVolume()">Reset volume</a>
+      		</ul>
+  	   	<ul>
+  	   		<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" onclick="highlight(solo)">Highlight solo</a>
+  	   		<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" onclick="only(solo)">Solo only</a>
+  	   	</ul>
+  	   	<ul>
+  	   		<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" onclick="highlight(t1)">Highlight tenor 1</a>
+  	   		<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" onclick="only(t1)">Tenor 1 only</a>
+  	   	</ul>
+  	   	<ul>
+  	   		<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" onclick="highlight(t2)">Highlight tenor 2</a>
+  	   		<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" onclick="only(t2)">Tenor 2 only</a>
+  	   	</ul>
+  	   	<ul>
+  	   		<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" onclick="highlight(baritone)">Highlight baritone</a>
+  	   		<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" onclick="only(baritone)">Baritone only</a>
+  	   	</ul>
+  	   	<ul>
+  	   		<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" onclick="highlight(bass)">Highlight bass</a>
+  	   		<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" onclick="only(bass)">Bass only</a>
+  	   	</ul>
+        </div>
+	  <div class="mdl-card__menu">
+	  </div>
+	</div>
+	
+	 <script type="text/javascript" src="scrubberCode.js"></script>
+</body>
+</html>
