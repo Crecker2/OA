@@ -62,10 +62,10 @@ $('.playpausebtn.init').click(function(){
 	           }
 
 	var allParts = [solo, t1, t2, baritone, bass];
-
+	var baseurl = "https://joshuafayer.com/OA/"
 	var files;
 	$.ajax({
-		url: '/../files.json',
+		url: baseurl + 'files.json',
 		dataType: 'json'
 	}).done(function(data){
 		files = data;
