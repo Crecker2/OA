@@ -65,7 +65,7 @@ $('.playpausebtn.init').click(function(){
 
 	var files;
 	$.ajax({
-		url: '../files.json',
+		url: '/../files.json',
 		dataType: 'json'
 	}).done(function(data){
 		files = data;
